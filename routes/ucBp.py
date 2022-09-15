@@ -8,4 +8,5 @@ ucBp = Blueprint('ucBp',__name__)
 #declarar rota para blueprint
 @ucBp.route('/uc')
 def uc_list():
-    db.create_all()
+    # db.create_all() - descomentar para criar o DB
+    return "Agr foi"
