@@ -7,3 +7,7 @@ Antes de rodar, lembrar de rodar da pasta pai os seguintes comandos em power she
     - $env:FLASK_ENV = "development"
 
 Após isso utilizar comando py -m flask run para executar.
+
+para navegar no bando, utilizar:
+
+&'C:\Users\gatra\Downloads\sqlite-tools-win32-x86-3390200\sqlite-tools-win32-x86-3390200\sqlite3.exe' db.sqlite3
