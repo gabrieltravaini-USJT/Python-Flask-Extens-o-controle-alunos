@@ -1,6 +1,6 @@
 from..extensions import db
 
-class uc(db.Model):
+class Uc(db.Model):
     __tablename__ = "ucs"
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     nome = db.Column(db.String(150))
