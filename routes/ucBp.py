@@ -59,3 +59,13 @@ def upd_uc():
 def delete_uc(uc_id=0):
     uc_query = Uc.query.filter_by(id = uc_id).first()
     return render_template('uc_delete.html', uc=uc_query)
+
+@ucBp.route('/uc/dlt', methods=["POST"])
+def dlt_uc():
+
+    iUc = request.form["id"]
+    uc = Uc.query.filter_by(id = iUc).first()
+    db.session.delete(uc)
+    db.session.commit()
+
+    return redirect(url_for("ucBp.uc_list"))
